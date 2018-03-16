@@ -17,6 +17,7 @@
     <module>fung-apache-commons</module>
     <module>fung-mybatis</module>
     <module>fung-jedis</module>
+    <module>fung-log4j</module>
   </modules>
 
   <dependencies>
