@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/fung-apache-commons/fung-apache-commons.iml" filepath="$PROJECT_DIR$/fung-apache-commons/fung-apache-commons.iml" />
+      <module fileurl="file://$PROJECT_DIR$/fung-basecode.iml" filepath="$PROJECT_DIR$/fung-basecode.iml" />
+      <module fileurl="file://$PROJECT_DIR$/fung-guava/fung-guava.iml" filepath="$PROJECT_DIR$/fung-guava/fung-guava.iml" />
+      <module fileurl="file://$PROJECT_DIR$/fung-mybatis/fung-mybatis.iml" filepath="$PROJECT_DIR$/fung-mybatis/fung-mybatis.iml" />
+      <module fileurl="file://$PROJECT_DIR$/fung-spring-boot/fung-spring-boot.iml" filepath="$PROJECT_DIR$/fung-spring-boot/fung-spring-boot.iml" />
+      <module fileurl="file://$PROJECT_DIR$/fung-spring-core/fung-spring-core.iml" filepath="$PROJECT_DIR$/fung-spring-core/fung-spring-core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/fung-spring-mvc/fung-spring-mvc.iml" filepath="$PROJECT_DIR$/fung-spring-mvc/fung-spring-mvc.iml" />
+    </modules>
+  </component>
+</project>

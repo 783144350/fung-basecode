@@ -15,6 +15,7 @@
     <module>fung-spring-boot</module>
     <module>fung-guava</module>
     <module>fung-apache-commons</module>
+    <module>fung-mybatis</module>
   </modules>
 
   <dependencies>
