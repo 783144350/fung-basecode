@@ -14,6 +14,7 @@
     <module>fung-spring-mvc</module>
     <module>fung-spring-boot</module>
     <module>fung-guava</module>
+    <module>fung-apache-commons</module>
   </modules>
 
   <dependencies>
