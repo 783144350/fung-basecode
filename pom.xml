@@ -12,6 +12,7 @@
   <modules>
     <module>fung-spring-core</module>
     <module>fung-spring-mvc</module>
+    <module>fung-spring-boot</module>
   </modules>
 
   <dependencies>
