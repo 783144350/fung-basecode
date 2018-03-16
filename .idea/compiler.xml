@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="fung-apache-commons" />
         <module name="fung-guava" />
+        <module name="fung-jedis" />
         <module name="fung-mybatis" />
         <module name="fung-spring-boot" />
         <module name="fung-spring-core" />
@@ -18,6 +19,7 @@
       <module name="fung-apache-commons" target="1.7" />
       <module name="fung-basecode" target="1.7" />
       <module name="fung-guava" target="1.7" />
+      <module name="fung-jedis" target="1.7" />
       <module name="fung-mybatis" target="1.7" />
       <module name="fung-spring-boot" target="1.7" />
       <module name="fung-spring-core" target="1.7" />

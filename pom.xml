@@ -16,6 +16,7 @@
     <module>fung-guava</module>
     <module>fung-apache-commons</module>
     <module>fung-mybatis</module>
+    <module>fung-jedis</module>
   </modules>
 
   <dependencies>
