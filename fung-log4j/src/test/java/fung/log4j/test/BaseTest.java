@@ -6,6 +6,8 @@ import org.slf4j.LoggerFactory;
 
 public class BaseTest {
 
+    private static Logger LOGGER = LoggerFactory.getLogger(BaseTest.class);
+
     @Test
     public void testHello() {
         System.out.println("Hello Log4j");
@@ -13,9 +15,19 @@ public class BaseTest {
 
     @Test
     public void testLog() {
-        Logger logger = LoggerFactory.getLogger(BaseTest.class);
         int status = 0;
-        logger.info("status: {}", status);
+        LOGGER.error("status: {}", status);
+    }
+
+    @Test
+    public void testPrintException() {
+        try {
+            LOGGER.info("test printing exception message");
+            throw new RuntimeException();
+        } catch (Exception e) {
+            e.printStackTrace();
+            LOGGER.error("error", e);
+        }
     }
 
 }
