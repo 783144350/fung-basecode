@@ -16,7 +16,19 @@ public class BaseTest {
     @Test
     public void testLog() {
         int status = 0;
-        LOGGER.error("status: {}", status);
+        LOGGER.info("status: {}", status);
+        LOGGER.debug("debug");
+    }
+
+    @Test
+    public void testRollingFile() {
+        for(int i = 0; i < 500000; i++) {
+            LOGGER.trace("trace");
+            LOGGER.debug("debug");
+            LOGGER.info("info");
+            LOGGER.warn("warn");
+            LOGGER.error("error");
+        }
     }
 
     @Test

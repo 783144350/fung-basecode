@@ -1,21 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Configuration status="OFF">
+<Configuration status="OFF" monitorInterval="300">
+  <properties>
+    <property name="FILE_NAME">test</property>
+  </properties>
   <Appenders>
     <Console name="Console" target="SYSTEM_OUT">
       <PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
     </Console>
-    <File name="MyFile" fileName="./logs/app.log">
+    <RollingRandomAccessFile name="FileLog"
+      fileName="../logs/${FILE_NAME}.log"
+      filePattern="../logs/$${date: yyyy-MM}/${FILE_NAME}-%d{yyyy-MM-dd}-%i.log.gz">
       <PatternLayout>
-        <Pattern>%d{yyyy-MM-dd HH:mm:ss} [%t] [%c:%L] %m%n%ex{100}</Pattern>
+        <Pattern>%d{yyyy-MM-dd HH:mm:ss} %-5level [%t] [%c:%L] %m%n%ex{100}</Pattern>
       </PatternLayout>
-    </File>
+      <Policies>
+        <TimeBasedTriggeringPolicy interval="1" />
+        <SizeBasedTriggeringPolicy size="100MB" />
+      </Policies>
+      <DefaultRolloverStrategy max="20" />
+    </RollingRandomAccessFile>
     <Async name="Async">
-      <AppenderRef ref="MyFile"/>
+      <AppenderRef ref="FileLog"/>
     </Async>
   </Appenders>
   <Loggers>
-    <Root level="info">
-      <AppenderRef ref="Console"/>
+    <Root level="TRACE">
       <AppenderRef ref="Async"/>
     </Root>
   </Loggers>
