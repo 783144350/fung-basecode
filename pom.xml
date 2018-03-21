@@ -18,6 +18,7 @@
     <module>fung-mybatis</module>
     <module>fung-jedis</module>
     <module>fung-log4j</module>
+    <module>fung-mongodb</module>
   </modules>
 
   <properties>

@@ -7,6 +7,7 @@
       <module fileurl="file://$PROJECT_DIR$/fung-guava/fung-guava.iml" filepath="$PROJECT_DIR$/fung-guava/fung-guava.iml" />
       <module fileurl="file://$PROJECT_DIR$/fung-jedis/fung-jedis.iml" filepath="$PROJECT_DIR$/fung-jedis/fung-jedis.iml" />
       <module fileurl="file://$PROJECT_DIR$/fung-log4j/fung-log4j.iml" filepath="$PROJECT_DIR$/fung-log4j/fung-log4j.iml" />
+      <module fileurl="file://$PROJECT_DIR$/fung-mongodb/fung-mongodb.iml" filepath="$PROJECT_DIR$/fung-mongodb/fung-mongodb.iml" />
       <module fileurl="file://$PROJECT_DIR$/fung-mybatis/fung-mybatis.iml" filepath="$PROJECT_DIR$/fung-mybatis/fung-mybatis.iml" />
       <module fileurl="file://$PROJECT_DIR$/fung-spring-boot/fung-spring-boot.iml" filepath="$PROJECT_DIR$/fung-spring-boot/fung-spring-boot.iml" />
       <module fileurl="file://$PROJECT_DIR$/fung-spring-core/fung-spring-core.iml" filepath="$PROJECT_DIR$/fung-spring-core/fung-spring-core.iml" />
