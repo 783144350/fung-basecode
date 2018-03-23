@@ -20,6 +20,7 @@
     <module>fung-jedis</module>
     <module>fung-log4j</module>
     <module>fung-java</module>
+    <module>fung-jdbc</module>
   </modules>
 
   <properties>

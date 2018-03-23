@@ -9,6 +9,7 @@
         <module name="fung-apache-commons" />
         <module name="fung-guava" />
         <module name="fung-java" />
+        <module name="fung-jdbc" />
         <module name="fung-jedis" />
         <module name="fung-log4j" />
         <module name="fung-mongodb" />
@@ -19,17 +20,18 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="fung-apache-commons" target="1.5" />
-      <module name="fung-basecode" target="1.5" />
-      <module name="fung-guava" target="1.5" />
-      <module name="fung-java" target="1.5" />
-      <module name="fung-jedis" target="1.5" />
-      <module name="fung-log4j" target="1.5" />
+      <module name="fung-apache-commons" target="1.7" />
+      <module name="fung-basecode" target="1.7" />
+      <module name="fung-guava" target="1.7" />
+      <module name="fung-java" target="1.7" />
+      <module name="fung-jdbc" target="1.7" />
+      <module name="fung-jedis" target="1.7" />
+      <module name="fung-log4j" target="1.7" />
       <module name="fung-mongodb" target="1.7" />
-      <module name="fung-mybatis" target="1.5" />
-      <module name="fung-spring-boot" target="1.5" />
-      <module name="fung-spring-core" target="1.5" />
-      <module name="fung-spring-mvc" target="1.5" />
+      <module name="fung-mybatis" target="1.7" />
+      <module name="fung-spring-boot" target="1.7" />
+      <module name="fung-spring-core" target="1.7" />
+      <module name="fung-spring-mvc" target="1.7" />
     </bytecodeTargetLevel>
   </component>
 </project>
