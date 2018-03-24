@@ -15,10 +15,12 @@
     <module>fung-spring-boot</module>
     <module>fung-guava</module>
     <module>fung-apache-commons</module>
+    <module>fung-mongodb</module>
     <module>fung-mybatis</module>
     <module>fung-jedis</module>
     <module>fung-log4j</module>
     <module>fung-java</module>
+    <module>fung-jdbc</module>
   </modules>
 
   <properties>
