@@ -7,7 +7,7 @@ public class ConcurrentLogger implements Logger {
 
     @Override
     public void log(String msg) {
-        SimpleDateFormat format = new SimpleDateFormat("hh:mm:ssS");
+        SimpleDateFormat format = new SimpleDateFormat("hh:mm:ss.S");
         System.out.println(format.format(new Date()) + " [" + Thread.currentThread().getName() + "]: " + msg);
     }
 }

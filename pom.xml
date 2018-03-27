@@ -21,6 +21,8 @@
     <module>fung-log4j</module>
     <module>fung-java</module>
     <module>fung-jdbc</module>
+    <module>fung-quartz</module>
+    <module>fung-util</module>
   </modules>
 
   <properties>
