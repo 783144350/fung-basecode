@@ -1,4 +1,4 @@
-package fung.spring.core.test;
+package fung.spring.test;
 
 import org.junit.Assert;
 import org.junit.Test;

@@ -23,6 +23,7 @@
     <module>fung-jdbc</module>
     <module>fung-quartz</module>
     <module>fung-util</module>
+    <module>fung-designmode</module>
   </modules>
 
   <properties>

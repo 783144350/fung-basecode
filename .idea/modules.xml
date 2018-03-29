@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/fung-apache-commons/fung-apache-commons.iml" filepath="$PROJECT_DIR$/fung-apache-commons/fung-apache-commons.iml" />
       <module fileurl="file://$PROJECT_DIR$/fung-basecode.iml" filepath="$PROJECT_DIR$/fung-basecode.iml" />
+      <module fileurl="file://$PROJECT_DIR$/fung-designmode/fung-designmode.iml" filepath="$PROJECT_DIR$/fung-designmode/fung-designmode.iml" />
       <module fileurl="file://$PROJECT_DIR$/fung-guava/fung-guava.iml" filepath="$PROJECT_DIR$/fung-guava/fung-guava.iml" />
       <module fileurl="file://$PROJECT_DIR$/fung-java/fung-java.iml" filepath="$PROJECT_DIR$/fung-java/fung-java.iml" />
       <module fileurl="file://$PROJECT_DIR$/fung-jdbc/fung-jdbc.iml" filepath="$PROJECT_DIR$/fung-jdbc/fung-jdbc.iml" />
