@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="fung-apache-commons" />
+        <module name="fung-designmode" />
         <module name="fung-guava" />
         <module name="fung-java" />
         <module name="fung-jdbc" />
@@ -24,6 +25,7 @@
     <bytecodeTargetLevel target="1.8">
       <module name="fung-apache-commons" target="1.7" />
       <module name="fung-basecode" target="1.7" />
+      <module name="fung-designmode" target="1.7" />
       <module name="fung-guava" target="1.7" />
       <module name="fung-java" target="1.8" />
       <module name="fung-jdbc" target="1.7" />
