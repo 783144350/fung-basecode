@@ -1,4 +1,4 @@
-package fung.util.excelparser;
+package fung.util.test.excelparser;
 
 import org.junit.Test;
 

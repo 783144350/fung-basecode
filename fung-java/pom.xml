@@ -10,11 +10,11 @@
   <modelVersion>4.0.0</modelVersion>
 
   <dependencies>
-    <dependency>
-      <groupId>com.skyworthdigital.excel</groupId>
-      <artifactId>com.skyworthdigital.excel</artifactId>
-      <version>0.0.1</version>
-    </dependency>
+    <!--<dependency>-->
+      <!--<groupId>com.skyworthdigital.excel</groupId>-->
+      <!--<artifactId>com.skyworthdigital.excel</artifactId>-->
+      <!--<version>0.0.1</version>-->
+    <!--</dependency>-->
     <!-- https://mvnrepository.com/artifact/org.springframework/spring-context -->
     <dependency>
       <groupId>org.springframework</groupId>

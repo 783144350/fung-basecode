@@ -1,5 +1,6 @@
-package fung.util.apkparser;
+package fung.util.test.apkparser;
 
+import fung.util.apkparser.ParseSignApk;
 import org.junit.Test;
 
 public class ParseSignApkTest {

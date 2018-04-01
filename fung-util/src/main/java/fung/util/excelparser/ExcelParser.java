@@ -6,8 +6,7 @@ import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
-import java.io.IOException;
-import java.io.InputStream;
+import java.io.*;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -17,6 +16,18 @@ public class ExcelParser {
 
     public static final int EDITION_2003 = 2003;
     public static final int EDITION_2007 = 2007;
+
+    public <T> List<T> parse(File file, Class<T> clazz) throws ExcelParseException {
+
+        try (InputStream in = new FileInputStream(file)) {
+            return parse(file.getName(), in, clazz);
+        } catch (FileNotFoundException e) {
+            throw new ExcelParseException("文件不存在：" + file.getName(), e);
+        } catch (IOException e) {
+            throw new ExcelParseException("文件读取出错：" + file.getName(), e);
+        }
+
+    }
 
     public <T> List<T> parse(String fileName, InputStream in, Class<T> clazz) throws ExcelParseException {
         if (fileName.endsWith("xls")) {

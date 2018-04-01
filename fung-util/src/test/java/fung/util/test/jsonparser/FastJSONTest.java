@@ -1,4 +1,4 @@
-package fung.util.jsonparser;
+package fung.util.test.jsonparser;
 
 import org.junit.Test;
 

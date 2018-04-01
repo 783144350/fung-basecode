@@ -1,7 +1,7 @@
-package fung.util.apkparser;
+package fung.util.test.apkparser;
 
+import fung.util.apkparser.ApkFileUtil;
 import net.dongliu.apk.parser.bean.ApkMeta;
-
 import org.junit.Test;
 
 import java.io.IOException;

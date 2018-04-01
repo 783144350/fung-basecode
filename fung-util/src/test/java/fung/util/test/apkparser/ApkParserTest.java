@@ -1,12 +1,7 @@
-package fung.util.apkparser;
+package fung.util.test.apkparser;
 
 import net.dongliu.apk.parser.ApkFile;
-import net.dongliu.apk.parser.bean.ApkMeta;
-import net.dongliu.apk.parser.bean.ApkSigner;
-import net.dongliu.apk.parser.bean.ApkV2Signer;
-import net.dongliu.apk.parser.bean.CertificateMeta;
-import net.dongliu.apk.parser.bean.UseFeature;
-
+import net.dongliu.apk.parser.bean.*;
 import org.junit.Assert;
 import org.junit.Test;
 

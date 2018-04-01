@@ -1,4 +1,4 @@
-package fung.util;
+package fung.util.test;
 
 import org.junit.Test;
 

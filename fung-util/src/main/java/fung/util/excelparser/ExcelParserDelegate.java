@@ -1,5 +1,6 @@
 package fung.util.excelparser;
 
+import org.apache.poi.hssf.usermodel.HSSFDateUtil;
 import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.ss.usermodel.Sheet;
@@ -7,10 +8,7 @@ import org.apache.poi.ss.usermodel.Sheet;
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;
 import java.math.BigDecimal;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 class ExcelParserDelegate<T> {
 
@@ -92,7 +90,7 @@ class ExcelParserDelegate<T> {
             return model;
 
         } catch (Exception e) {
-            throw new ExcelParseException("解析Excel行：" + rowIndex + "出错", e);
+            throw new ExcelParseException("解析Excel行" + rowIndex + "出错", e);
         }
     }
 
@@ -106,7 +104,11 @@ class ExcelParserDelegate<T> {
 
         switch (cell.getCellType()) {
             case Cell.CELL_TYPE_NUMERIC:
-                return new BigDecimal(cell.getNumericCellValue()).toPlainString();
+                if (HSSFDateUtil.isCellDateFormatted(cell)) {
+                    return String.valueOf(cell.getDateCellValue().getTime());
+                } else {
+                    return new BigDecimal(cell.getNumericCellValue()).toPlainString();
+                }
             case Cell.CELL_TYPE_STRING:
                 return cell.getStringCellValue();
             case Cell.CELL_TYPE_FORMULA:
@@ -128,10 +130,12 @@ class ExcelParserDelegate<T> {
             return Integer.parseInt(value);
         } else if (type.equals(long.class) || type.equals(Long.class)) {
             return Long.parseLong(value);
-        } else if (type.equals(boolean.class) || type.equals(Boolean.class))  {
+        } else if (type.equals(boolean.class) || type.equals(Boolean.class)) {
             return Boolean.parseBoolean(value);
         } else if (type.equals(float.class) || type.equals(Float.class)) {
             return Float.parseFloat(value);
+        } else if (type.equals(Date.class)) {
+            return new Date(Long.parseLong(value));
         } else {
             throw new IllegalArgumentException("暂不支持数据类型：" + type);
         }

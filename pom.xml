@@ -17,25 +17,6 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
 
-  <repositories>
-    <repository>
-      <snapshots>
-        <enabled>true</enabled>
-      </snapshots>
-      <id>skyworth</id>
-      <name>maven-public Repositories</name>
-      <url>http://172.28.17.29:8081/nexus/content/groups/public/</url>
-    </repository>
-  </repositories>
-
-  <distributionManagement>
-    <repository>
-      <id>skyworth</id>
-      <name>skyworth</name>
-      <url>http://172.28.17.29:8081/nexus/content/repositories/skyworth/</url>
-    </repository>
-  </distributionManagement>
-
   <modules>
     <module>fung-spring-core</module>
     <module>fung-spring-mvc</module>
