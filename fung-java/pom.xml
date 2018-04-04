@@ -10,28 +10,33 @@
   <modelVersion>4.0.0</modelVersion>
 
   <dependencies>
-    <!--<dependency>-->
-      <!--<groupId>com.skyworthdigital.excel</groupId>-->
-      <!--<artifactId>com.skyworthdigital.excel</artifactId>-->
-      <!--<version>0.0.1</version>-->
-    <!--</dependency>-->
+
+    <dependency>
+      <groupId>com.skyworthdigital.excel</groupId>
+      <artifactId>com.skyworthdigital.excel</artifactId>
+      <version>0.0.2</version>
+    </dependency>
+
     <!-- https://mvnrepository.com/artifact/org.springframework/spring-context -->
     <dependency>
       <groupId>org.springframework</groupId>
       <artifactId>spring-context</artifactId>
       <version>5.0.4.RELEASE</version>
     </dependency>
+
     <!-- https://mvnrepository.com/artifact/com.alibaba/fastjson -->
     <dependency>
       <groupId>com.alibaba</groupId>
       <artifactId>fastjson</artifactId>
       <version>1.2.47</version>
     </dependency>
+
     <dependency>
       <groupId>net.dongliu</groupId>
       <artifactId>apk-parser</artifactId>
       <version>RELEASE</version>
     </dependency>
+
   </dependencies>
 
   <artifactId>fung-java</artifactId>

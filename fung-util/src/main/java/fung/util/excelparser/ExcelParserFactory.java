@@ -6,16 +6,9 @@ public class ExcelParserFactory {
 
     }
 
-    private static ExcelParser instance;
+    private static ExcelParser instance = new ExcelParser();
 
     public static ExcelParser getInstance() {
-        if (instance == null) {
-            synchronized (ExcelParserFactory.class) {
-                if (instance == null) {
-                    instance = new ExcelParser();
-                }
-            }
-        }
         return instance;
     }
 

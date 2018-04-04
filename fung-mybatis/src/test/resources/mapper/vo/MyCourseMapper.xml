@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="fung.mybatis.mapper.vo.MyCourseMapper" >
+  
+  <resultMap id="studentV" type="fung.mybatis.pojos.vo.StudentV">
+    <result property="name" column="studentName"/>
+    <collection property="courseVList" ofType="fung.mybatis.pojos.vo.CourseV">
+      <result property="name" column="courseName"/>
+      <result property="score" column="score"/>
+      <collection property="bookVList" ofType="fung.mybatis.pojos.vo.BookV">
+        <result property="name" column="bookName"/>
+      </collection>
+    </collection>
+  </resultMap>
+
+  <select id="queryStudentV" resultMap="studentV">
+    select
+      student.name as studentName,
+      course.name as courseName,
+      student_course_map.score as score,
+      book.name as bookName
+    from student
+      left join student_course_map on student.id = student_course_map.studentId
+      left join course on student_course_map.courseId = course.id
+      left join course_book_map on course.id = course_book_map.courseId
+      left join book on course_book_map.bookId = book.id
+    where student.id = #{id}
+  </select>
+
+</mapper>
