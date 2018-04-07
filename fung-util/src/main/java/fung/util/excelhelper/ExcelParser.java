@@ -58,15 +58,4 @@ public class ExcelParser {
         }
     }
 
-    private Map<String, Integer> getHeaderMap(Row header) {
-        Map<String, Integer> headerMap = new HashMap<>();
-        for (int colIndex = header.getFirstCellNum(); colIndex < header.getLastCellNum(); colIndex++) {
-            Cell cell = header.getCell(colIndex);
-            headerMap.put(cell.getStringCellValue(), colIndex);
-        }
-        return headerMap;
-    }
-
-
-
 }

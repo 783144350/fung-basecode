@@ -9,6 +9,11 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
+    <properties>
+        <version.slf4j>1.7.25</version.slf4j>
+        <version.log4j>2.10.0</version.log4j>
+    </properties>
+
     <artifactId>fung-mybatis</artifactId>
 
     <dependencies>
@@ -24,6 +29,13 @@
             <groupId>org.springframework</groupId>
             <artifactId>spring-core</artifactId>
             <version>4.3.7.RELEASE</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>5.1.34</version>
         </dependency>
 
     </dependencies>
