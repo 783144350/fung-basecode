@@ -1,9 +1,9 @@
 package fung.util.test.excelparser;
 
 import com.alibaba.fastjson.JSON;
-import fung.util.excelparser.ExcelParseException;
-import fung.util.excelparser.ExcelParser;
-import fung.util.excelparser.ExcelParserFactory;
+import fung.util.excelhelper.ExcelParseException;
+import fung.util.excelhelper.ExcelParser;
+import fung.util.excelhelper.ExcelParserFactory;
 import org.junit.Test;
 import org.springframework.core.io.ClassPathResource;
 import org.springframework.core.io.Resource;

@@ -22,6 +22,11 @@ public class SpringIOCTest {
         person.useAxe();
     }
 
-
+    @Test
+    public void testAutowire() {
+        ApplicationContext ctx = new ClassPathXmlApplicationContext("Autowire-beans-config.xml", SpringIOCTest.class);
+        Person person = ctx.getBean("chinese", Person.class);
+        person.useAxe();
+    }
 
 }

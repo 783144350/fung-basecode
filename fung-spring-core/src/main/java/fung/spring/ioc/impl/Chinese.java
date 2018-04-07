@@ -2,10 +2,16 @@ package fung.spring.ioc.impl;
 
 import fung.spring.ioc.Axe;
 import fung.spring.ioc.Person;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.stereotype.Component;
 
+@Component
 public class Chinese implements Person {
 
-    private Axe axe;
+    @Autowired
+    @Qualifier("axe")
+    private Axe axe22;
 
     private String name;
 
@@ -15,17 +21,17 @@ public class Chinese implements Person {
 
     public Chinese(String name, Axe axe) {
         this.name = name;
-        this.axe = axe;
+        this.axe22 = axe;
     }
 
-    public void setAxe(Axe axe) {
-        this.axe = axe;
+    public void setAxe2(Axe axe) {
+        this.axe22 = axe;
     }
 
-    @Override
     public void useAxe() {
         System.out.println("Chines ues axe");
         System.out.println("My name is: " + name);
-        axe.ues();
+        axe22.ues();
     }
+
 }

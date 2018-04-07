@@ -1,6 +1,6 @@
 package fung.util.test.excelparser;
 
-import fung.util.excelparser.ExcelHead;
+import fung.util.excelhelper.ExcelHead;
 
 import java.util.Date;
 
