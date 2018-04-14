@@ -17,7 +17,7 @@ public class ExcelMaker {
     }
 
     public <T> void make(OutputStream out, List<T> data) {
-        
+
     }
 
 }
