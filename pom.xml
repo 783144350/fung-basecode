@@ -51,6 +51,7 @@
     <module>fung-quartz</module>
     <module>fung-util</module>
     <module>fung-designmode</module>
+    <module>fung-umeng</module>
   </modules>
 
   <dependencies>

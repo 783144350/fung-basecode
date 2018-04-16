@@ -16,6 +16,7 @@
       <module fileurl="file://$PROJECT_DIR$/fung-spring-boot/fung-spring-boot.iml" filepath="$PROJECT_DIR$/fung-spring-boot/fung-spring-boot.iml" />
       <module fileurl="file://$PROJECT_DIR$/fung-spring-core/fung-spring-core.iml" filepath="$PROJECT_DIR$/fung-spring-core/fung-spring-core.iml" />
       <module fileurl="file://$PROJECT_DIR$/fung-spring-mvc/fung-spring-mvc.iml" filepath="$PROJECT_DIR$/fung-spring-mvc/fung-spring-mvc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/fung-umeng/fung-umeng.iml" filepath="$PROJECT_DIR$/fung-umeng/fung-umeng.iml" />
       <module fileurl="file://$PROJECT_DIR$/fung-util/fung-util.iml" filepath="$PROJECT_DIR$/fung-util/fung-util.iml" />
     </modules>
   </component>

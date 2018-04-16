@@ -1,8 +1,8 @@
 package fung.java.test.util;
 
-import java.util.Date;
+import com.skyworthdigital.excel.ExcelHead;
 
-import fung.util.excelparser.ExcelHead;
+import java.util.Date;
 
 public class Model2 {
     @ExcelHead(value = "PartName")

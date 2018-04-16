@@ -11,4 +11,6 @@ public @interface ExcelHead {
 
     String value();
 
+    int index() default -1;
+
 }
