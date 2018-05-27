@@ -12,34 +12,36 @@
         <module name="fung-java" />
         <module name="fung-jdbc" />
         <module name="fung-jedis" />
+        <module name="fung-jxls" />
         <module name="fung-log4j" />
         <module name="fung-mongodb" />
         <module name="fung-mybatis" />
         <module name="fung-quartz" />
+        <module name="fung-slf4j-logback" />
         <module name="fung-spring-boot" />
         <module name="fung-spring-core" />
         <module name="fung-spring-mvc" />
-        <module name="fung-umeng" />
         <module name="fung-util" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="1.8">
-      <module name="fung-apache-commons" target="1.7" />
-      <module name="fung-basecode" target="1.7" />
-      <module name="fung-designmode" target="1.7" />
-      <module name="fung-guava" target="1.7" />
+      <module name="fung-apache-commons" target="1.5" />
+      <module name="fung-basecode" target="1.5" />
+      <module name="fung-designmode" target="1.5" />
+      <module name="fung-guava" target="1.5" />
       <module name="fung-java" target="1.8" />
-      <module name="fung-jdbc" target="1.7" />
-      <module name="fung-jedis" target="1.7" />
+      <module name="fung-jdbc" target="1.5" />
+      <module name="fung-jedis" target="1.5" />
       <module name="fung-jmh" target="1.5" />
-      <module name="fung-log4j" target="1.7" />
+      <module name="fung-jxls" target="1.8" />
+      <module name="fung-log4j" target="1.5" />
       <module name="fung-mongodb" target="1.7" />
-      <module name="fung-mybatis" target="1.7" />
-      <module name="fung-quartz" target="1.7" />
-      <module name="fung-spring-boot" target="1.7" />
-      <module name="fung-spring-core" target="1.7" />
-      <module name="fung-spring-mvc" target="1.7" />
-      <module name="fung-umeng" target="1.7" />
+      <module name="fung-mybatis" target="1.5" />
+      <module name="fung-quartz" target="1.5" />
+      <module name="fung-slf4j-logback" target="1.5" />
+      <module name="fung-spring-boot" target="1.5" />
+      <module name="fung-spring-core" target="1.5" />
+      <module name="fung-spring-mvc" target="1.5" />
       <module name="fung-util" target="1.8" />
     </bytecodeTargetLevel>
   </component>

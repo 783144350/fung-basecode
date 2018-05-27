@@ -10,8 +10,8 @@ import org.junit.Test;
 
 public class BaseTest {
 
-    private MyMongoClient myMongoClient = MyMongoClient.createClient("172.28.17.26", 27017)
-            .useDatabase("fung").useCollection("fung");
+    private MyMongoClient myMongoClient = MyMongoClient.createClient("127.0.0.1", 27017)
+            .useDatabase("test").useCollection("user");
 
     @Test
     public void testHello() {
