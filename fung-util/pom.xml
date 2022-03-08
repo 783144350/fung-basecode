@@ -10,7 +10,7 @@
   <modelVersion>4.0.0</modelVersion>
   
   <properties>
-    <poi.version>3.14</poi.version>
+    <poi.version>5.2.1</poi.version>
   </properties>
 
   <artifactId>fung-util</artifactId>
